@@ -17,7 +17,7 @@ const goalSchema = new Schema(
       type: Number,
       default: 0,
       min: 0,
-      max: 0,
+      max: 100,
       required: true,
     },
   },

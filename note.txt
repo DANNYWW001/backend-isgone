@@ -56,3 +56,15 @@ valid data types acceped by mongodb
 strings, array, number. date, boolean,buffer, objectid, mixed
 
 create a schmema model that fits our projecct logic
+
+MVC architecture it is a pattern used in writting backend
+anything that has to do with schema should be placed inside models folder(models are imported inside of a controller)
+controllers- where all of the logic and func to be performed on this model will be written
+routes- defines the address youre meant to go to see each resources or controller, it helps to create access to the controller
+you can add to the database using create method or save method
+
+
+
+
+
+origin
