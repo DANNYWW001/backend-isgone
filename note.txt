@@ -1,0 +1,58 @@
+firstly get your packagejspn by using npm init -y
+change the name of the main in your package json to your preffered
+then install the dependencies like express npm install express
+after which you install nodemon dependencies npm install nodemon --save--dev,
+next thing to do is wrirte the script
+i. we are writing the start script first
+ii. then the dev 
+iii. open a file call .gitignore
+next you import your express and create a server
+makee sure to make the app listen 
+
+set up some basic routes 
+i. home routes
+ii. error routes
+
+
+inside your pakage.json
+beneat the test... you write    1,
+ "start": "node app.js",
+    "dev" : "nodemon app.js"
+
+
+    (very important)
+    create a file called .gitignore
+    then type node_modules
+
+    how establish a connection between MongoDb and the database
+    First we build our simple server in app.js
+    const express = require('express')
+const app = express()
+const PORT = 3000
+
+
+
+then Listen function in other to run your npm run dev
+
+app.listen(PORT, () =>{
+    console.log(server running on port: ${PORT});
+    
+})
+
+
+environmental variables- they work for sensitive information
+two step to have aceess
+i. installing dotenv
+in our app.js first line of code require("dotenv").config()
+create a file called .env
+also add env to gitignore
+in your env secret = mysecret
+
+
+iportance of mongoose
+i. it is used to create a schmema(how you want your information to look like, it defines how each document will look like)
+
+valid data types acceped by mongodb
+strings, array, number. date, boolean,buffer, objectid, mixed
+
+create a schmema model that fits our projecct logic
